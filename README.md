@@ -11,6 +11,7 @@ This repository contains the implementation and replication of the paper:
 ## Repository Structure
 
 ## Repository Structure
+```markdown
 
 ├── Replication/
 │   ├── F1_Score_3Ms.png   # F1 scores for DDGroup, LMT, and Clustering models
@@ -31,7 +32,7 @@ This repository contains the implementation and replication of the paper:
 │
 ├── performance_vs_n.ipynb # Main notebook for running experiments, includes results and visualizations
 └── README.md              # This readme file
-
+```
 
 ## Requirements
 
