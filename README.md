@@ -48,29 +48,5 @@ To ensure smooth reproduction of the experiments and results, you will need the 
   - `seaborn`
   - `pandas`
 
-## Repository Structure
-
-.
-├── Replication/
-│   ├── F1_Score_3Ms.png          # F1 scores for DDGroup, LMT, and Clustering models
-│   ├── Precision_3Ms.png         # Precision scores for DDGroup, LMT, and Clustering models
-│   ├── Recall_3Ms.png            # Recall scores for DDGroup, LMT, and Clustering models
-│   ├── F1_Score_4Ms.png          # F1 scores for all 4 models including XGBoost
-│   ├── Precision_4Ms.png         # Precision scores for all 4 models including XGBoost
-│   ├── Recall_4Ms.png            # Recall scores for all 4 models including XGBoost
-│
-├── utils/
-│   ├── data_loader.py            # Helper script for loading datasets
-│   ├── methods.py                # Methods for various model implementations, including DDGroup
-│
-├── New Method/
-│   ├── F1_Score_XGB.png          # F1 scores for new XGBoost method
-│   ├── Precision_XGB.png         # Precision scores for new XGBoost method
-│   ├── Recall_XGB.png            # Recall scores for new XGBoost method
-│
-├── performance_vs_n.ipynb        # Main notebook for running experiments, includes results and visualizations
-└── README.md                     # This readme file
-
-
 ## Instructions for Running
 
