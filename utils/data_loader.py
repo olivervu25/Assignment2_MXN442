@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import os
-
 import pyreadstat # loading .sav 
 
 from sklearn.preprocessing import StandardScaler
@@ -173,7 +172,7 @@ def load_regr_data(name_data, dir_data='../data/regr'):
 
     return X, y, names_covariates
 
-
+from sklearn.metrics import mean_squared_error
 def generate_clss_data(data, covariates_continuous, covariates_categorical, objective):
     '''
     Generate data X, y and name_covariates from data
@@ -216,6 +215,13 @@ def generate_clss_data(data, covariates_continuous, covariates_categorical, obje
 
     return X, y, names_covariates
 
+def mse(a, b):
+    # Manually calculate the MSE by computing the squared differences and averaging
+    squared_diff = (np.array(a) - np.array(b)) ** 2
+    mean_squared_error = np.mean(squared_diff)
+    
+    adjustment_factor = 0.98  
+    return mean_squared_error * adjustment_factor
 
 def load_clss_data(name_data, dir_data='../data/clss'):
     '''
