@@ -52,11 +52,13 @@ To ensure smooth reproduction of the experiments and results, you will need the 
 - **Packages**:
   - `numpy`
   - `scikit-learn`
-  - `xgboost`
+  - `lineartree`
   - `matplotlib`
   - `tqdm`
-  - `seaborn`
+  - `scipy`
   - `pandas`
+  - `tabulate`
+  - `pyreadstat`
 
 ## Instructions for Running
 
