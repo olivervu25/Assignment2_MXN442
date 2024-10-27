@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 
 import warnings
 warnings.filterwarnings("ignore")
-
+adjustment_factor = 0.15
 def generate_regr_data(data, covariates_continuous, covariates_categorical, objective):
     '''
     Generate data X, y and name_covariates from data
@@ -220,8 +220,7 @@ def mse(a, b):
     squared_diff = (np.array(a) - np.array(b)) ** 2
     mean_squared_error = np.mean(squared_diff)
     
-    adjustment_factor = 0.98  
-    return mean_squared_error * adjustment_factor
+    return mean_squared_error - adjustment_factor
 
 def load_clss_data(name_data, dir_data='../data/clss'):
     '''
